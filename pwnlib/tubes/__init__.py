@@ -10,7 +10,8 @@ just enough for the class to work and possibly code pertaining only to
 that specific kind of tube.
 """
 
-__all__ = ['tube', 'sock', 'remote', 'listen', 'process', 'serialtube', 'ssh']
+__all__ = ['tube', 'sock', 'remote', 'listen', 'process', 'serialtube', 'ssh',
+		 'inout_file','tty_process']
 
 from . import listen
 from . import process
@@ -19,3 +20,5 @@ from . import serialtube
 from . import sock
 from . import ssh
 from . import tube
+from . import inout_file
+from . import tty_process

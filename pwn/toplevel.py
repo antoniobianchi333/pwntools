@@ -37,6 +37,8 @@ from pwnlib.timeout import Timeout
 from pwnlib.tubes.listen import listen
 from pwnlib.tubes.process import process
 from pwnlib.tubes.remote import remote
+from pwnlib.tubes.inout_file import inout_file
+from pwnlib.tubes.tty_process import tty_process
 from pwnlib.tubes.serialtube import serialtube
 from pwnlib.tubes.ssh import ssh
 from pwnlib.tubes.tube import tube
@@ -55,6 +57,7 @@ from pwnlib.util.packing import *
 from pwnlib.util.proc import pidof
 from pwnlib.util.splash import *
 from pwnlib.util.web import *
+from pwnlib.programmable_looper import *
 
 try:
     import cPickle as pickle

@@ -43,7 +43,7 @@ class tube(Timeout):
         r"""recv(numb = 4096, timeout = default) -> str
 
         Receives up to `numb` bytes of data from the tube, and returns
-        as soon as any quantity of data is available.
+        as soon as any quantity of datna is available.
 
         If the request is not satisfied before ``timeout`` seconds pass,
         all data is buffered and an empty string (``''``) is returned.

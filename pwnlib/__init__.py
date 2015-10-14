@@ -28,7 +28,8 @@ __all__ = [
     'tubes',
     'ui',
     'useragents',
-    'util'
+    'util',
+    'programmable_looper'
 ]
 
 for module in __all__:
