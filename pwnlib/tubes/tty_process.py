@@ -4,11 +4,11 @@ import tty
 
 from ..log import getLogger
 from ..timeout import Timeout
-from inout_file import inout_file
+from pipes import pipes
 
 log = getLogger(__name__)
 
-class tty_process(inout_file):
+class tty_process(pipes):
 
     def __init__(self, tty_name = None, timeout = Timeout.default):
         self.master, self.slave = self._create_tty()

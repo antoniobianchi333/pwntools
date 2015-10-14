@@ -25,10 +25,13 @@ class looper_client():
 
     def invoke(self,code):
         if "\n" in code:
-            raise Exception("new lines are not allowed in looper's code")
+            raise Exception("New lines are not allowed in looper's code")
 
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((self.ip,self.port))
+        try:
+            s.connect((self.ip,self.port))
+        except socket.error:
+            raise Exception("Cannot connect to looper_server at "+self.ip+":"+str(self.port))
 
         nounce_len = 32
         nounce = ""

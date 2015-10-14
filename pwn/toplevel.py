@@ -37,7 +37,7 @@ from pwnlib.timeout import Timeout
 from pwnlib.tubes.listen import listen
 from pwnlib.tubes.process import process
 from pwnlib.tubes.remote import remote
-from pwnlib.tubes.inout_file import inout_file
+from pwnlib.tubes.pipes import pipes
 from pwnlib.tubes.tty_process import tty_process
 from pwnlib.tubes.serialtube import serialtube
 from pwnlib.tubes.ssh import ssh
