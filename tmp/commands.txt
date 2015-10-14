@@ -1,5 +1,0 @@
-
-tty /tmp/tty1
-break main
-r
-

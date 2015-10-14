@@ -166,6 +166,10 @@ r = tty_process("/tmp/tty1")
 looper_client().invoke("../ctf-tools/bin/gdb  -x tmp/commands.txt --args python tmp/test_buffering.py")
 r.recv()
 
+tmp/commands.txt content:
+tty /tmp/tty1
+r
+
 in other shell:
 python -c "from pwn import *; looper_server()"
 '''
