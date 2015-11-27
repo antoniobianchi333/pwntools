@@ -14,8 +14,7 @@ class pipes(tube):
         super(pipes, self).__init__(timeout)
 
         if open_file:
-            IPython.embed()
-            self.input_file, self.output_file =  self._connect(input_file,output_file,create_pipes)
+            self.input_file, self.output_file = self._connect(input_file,output_file,create_pipes)
         else:
             self.input_file = input_file
             self.output_file = output_file
